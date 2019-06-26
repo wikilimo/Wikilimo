@@ -1,5 +1,5 @@
 * Refine achievable modules
 * Define milestones & timelines
-* Create the System Design & Data Flow Diagrams
 * Run idea through judges
 * Create business plan
+* Develop UI
