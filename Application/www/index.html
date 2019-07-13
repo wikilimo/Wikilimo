@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+    	
+         <style>
+        
+        </style>
+
+        <meta http-equiv="Content-Security-Policy" content="default-src 'self' data: gap: https://ssl.gstatic.com 'unsafe-eval'; style-src 'self' 'unsafe-inline'; media-src *; img-src 'self' data: content:;">
+        <meta name="format-detection" content="telephone=no">
+        <meta name="msapplication-tap-highlight" content="no">
+        <meta name="viewport" content="initial-scale=1, width=device-width, viewport-fit=cover">
+        <link rel="stylesheet" type="text/css" href="css/index.css">
+        <title>Hello World</title>
+    </head>
+    <body>
+        <div class="app">
+            <h1>Wikilimo</h1>
+            <div id="deviceready" class="blink">
+                <p class="event listening"></p>
+                <p class="event received">Register below!</p>
+            </div>
+            <br>
+            <form method="POST" onSubmit="return submitForm()">
+                <fieldset>
+                    <div>
+                        <input name="username" type="text" placeholder="Username" tabindex="1">
+                    </div>
+                    <br>
+                    <div>
+                        <input name="cell" type="tel" placeholder="Phone number" tabindex="2">
+                    </div>
+                    <br>
+                    <button type="submit"> <a href="survey.html">Submit!</button>
+                
+                </fieldset>
+            </form>
+
+        </div>
+        
+        <script type="text/javascript" src="cordova.js"></script>
+        <script type="text/javascript" src="js/index.js">
+            
+            function submitForm() {
+                var uname = $('[name="username"]').val();
+                var phn = $('[name="cell"]').val();
+
+                window.localStorage.setItem("username", uname);
+                window.localStorage['cell'] = phn;
+                return false;
+        
+                $('#output').html("Username: " + window.localStorage.getItem("username") + "<br>" + "Phone number: " + window.localStorage["cell"]
+                    );
+
+    </script> 
+    </div>            }
+    </script>
+
+    </body>
+</html>
