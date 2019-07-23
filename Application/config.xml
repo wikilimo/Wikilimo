@@ -2,10 +2,10 @@
 <widget id="tech.roshnibiswas.wikilimo" version="1.0.0" xmlns="http://www.w3.org/ns/widgets" xmlns:cdv="http://cordova.apache.org/ns/1.0">
     <name>Wikilimo</name>
     <description>
-        A sample Apache Cordova application that responds to the deviceready event.
+        A 'kilimo' tool built by everyone.
     </description>
-    <author email="dev@cordova.apache.org" href="http://cordova.io">
-        Apache Cordova Team
+    <author email="wikilimo.africa@gmail.com" href="">
+        Wikilimo Team: Roshni and Anurag.
     </author>
     <content src="index.html" />
     <icon src="www/img/logo.png" />
