@@ -22,6 +22,7 @@ buildscript {
     repositories {
         google()
         jcenter()
+        maven { url 'https://maven.fabric.io/public' } // Fabrics Maven repository from cordova-plugin-firebase-lib
     }
 
     dependencies {
@@ -29,6 +30,10 @@ buildscript {
         // in the individual module build.gradle files
 
         classpath 'com.android.tools.build:gradle:3.3.0'
+
+        classpath 'com.google.gms:google-services:4.2.0' // google-services dependency from cordova-plugin-firebase-lib
+
+        classpath 'io.fabric.tools:gradle:1.25.4' // fabric dependency from cordova-plugin-firebase-lib
     }
 }
 
@@ -36,6 +41,7 @@ allprojects {
     repositories {
         google()
         jcenter()
+        google() // Google's Maven repository from cordova-plugin-firebase-lib
     }
 
     //This replaces project.properties w.r.t. build settings

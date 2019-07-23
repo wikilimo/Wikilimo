@@ -1,0 +1,88 @@
+{
+  "_from": "cordova-plugin-firebase-lib",
+  "_id": "cordova-plugin-firebase-lib@5.1.1",
+  "_inBundle": false,
+  "_integrity": "sha512-uOtTXRWrkDLmKdxl5KmPA9PV527ETJ9VoL0TY/gstuJq1OKn03xu/JF96rZAqyp8ZQvqJvY6Jm779md6ozvzXw==",
+  "_location": "/cordova-plugin-firebase-lib",
+  "_phantomChildren": {},
+  "_requested": {
+    "type": "tag",
+    "registry": true,
+    "raw": "cordova-plugin-firebase-lib",
+    "name": "cordova-plugin-firebase-lib",
+    "escapedName": "cordova-plugin-firebase-lib",
+    "rawSpec": "",
+    "saveSpec": null,
+    "fetchSpec": "latest"
+  },
+  "_requiredBy": [
+    "#USER",
+    "/"
+  ],
+  "_resolved": "https://registry.npmjs.org/cordova-plugin-firebase-lib/-/cordova-plugin-firebase-lib-5.1.1.tgz",
+  "_shasum": "562fbb12199f306a2992582f48ec41cf4a3e2904",
+  "_spec": "cordova-plugin-firebase-lib",
+  "_where": "C:\\Users\\Roshni\\Desktop\\Acads\\SummerDev\\Wikilimo",
+  "author": {
+    "name": "Wiz Panda Techno Solutions",
+    "url": "https://www.wizpanda.com/"
+  },
+  "bugs": {
+    "url": "https://github.com/wizpanda/cordova-plugin-firebase-lib/issues"
+  },
+  "bundleDependencies": false,
+  "cordova": {
+    "id": "cordova-plugin-firebase-lib",
+    "platforms": [
+      "android",
+      "ios",
+      "browser"
+    ]
+  },
+  "dependencies": {
+    "chalk": "^2.4.2",
+    "xcode": "^2.0.0"
+  },
+  "deprecated": false,
+  "description": "Cordova plugin for Google Firebase",
+  "devDependencies": {
+    "cordova-common": "^3.2.0",
+    "markdown-toc": "^1.2.0"
+  },
+  "homepage": "https://github.com/wizpanda/cordova-plugin-firebase-lib#readme",
+  "keywords": [
+    "ecosystem:cordova",
+    "cordova-android",
+    "cordova-ios",
+    "cordova-browser",
+    "firebase",
+    "push",
+    "notifications",
+    "phone auth"
+  ],
+  "license": "MIT",
+  "name": "cordova-plugin-firebase-lib",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/wizpanda/cordova-plugin-firebase-lib.git"
+  },
+  "scripts": {
+    "postversion": "git push && git push --tags && npm publish --verbose",
+    "preversion": "git add CHANGELOG.md && npx markdown-toc -i README.md && npx markdown-toc -i docs/API.md",
+    "test": "npm run test:ios && npm run test:android && npm run test:browser",
+    "test:android": "npm run test:cordova@7.1.0:android@7.1.0 && npm run test:cordova@8.0.0:android@7.1.0 && npm run test:cordova@9.0.0:android@8.0.0",
+    "test:browser": "npm run test:cordova@6.5.0:browser@5.0.3 && npm run test:cordova@7.1.0:browser@5.0.3 && npm run test:cordova@8.0.0:browser@5.0.3",
+    "test:cordova@6.5.0:android@6.4.0": "bash ./test/test-default.sh 6.5.0 android 6.4.0 && bash ./test/test-with-3-plugins.sh 6.5.0 android 6.4.0 cordova-plugin-request-location-accuracy cordova-android-play-services-gradle-release cordova-android-firebase-gradle-release",
+    "test:cordova@6.5.0:browser@5.0.3": "bash ./test/test-default.sh 6.5.0 browser 5.0.3",
+    "test:cordova@6.5.0:ios@4.5.4": "bash ./test/test-default.sh 6.5.0 ios 4.5.4",
+    "test:cordova@7.1.0:android@7.1.0": "bash ./test/test-default.sh 7.1.0 android 7.1.0 && bash ./test/test-with-3-plugins.sh 7.1.0 android 7.1.0 cordova-plugin-request-location-accuracy cordova-android-play-services-gradle-release cordova-android-firebase-gradle-release",
+    "test:cordova@7.1.0:browser@5.0.3": "bash ./test/test-default.sh 7.1.0 browser 5.0.3",
+    "test:cordova@7.1.0:ios@4.5.4": "bash ./test/test-default.sh 7.1.0 ios 4.5.4",
+    "test:cordova@8.0.0:android@7.1.0": "bash ./test/test-default.sh 8.0.0 android 7.1.0 && bash ./test/test-with-3-plugins.sh 8.0.0 android 7.1.0 cordova-plugin-request-location-accuracy cordova-android-play-services-gradle-release cordova-android-firebase-gradle-release",
+    "test:cordova@8.0.0:browser@5.0.3": "bash ./test/test-default.sh 8.0.0 browser 5.0.3",
+    "test:cordova@8.0.0:ios@4.5.4": "bash ./test/test-default.sh 8.0.0 ios 4.5.4",
+    "test:ios": "npm run test:cordova@6.5.0:ios@4.5.4 && npm run test:cordova@7.1.0:ios@4.5.4 && npm run test:cordova@8.0.0:ios@4.5.4",
+    "version": "node ./bump-version.js && git add -A plugin.xml && git add README.md && git add docs/*.md"
+  },
+  "version": "5.1.1"
+}

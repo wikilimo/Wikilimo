@@ -9,6 +9,15 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+        <service android:enabled="true" android:exported="false" android:name="com.google.android.gms.measurement.AppMeasurementService" />
+        <service android:name="org.apache.cordova.firebase.FirebasePluginMessagingService">
+            <intent-filter>
+                <action android:name="com.google.firebase.MESSAGING_EVENT" />
+            </intent-filter>
+        </service>
+        <receiver android:name="org.apache.cordova.firebase.OnNotificationOpenReceiver" />
     </application>
     <uses-sdk android:minSdkVersion="19" android:targetSdkVersion="28" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
 </manifest>

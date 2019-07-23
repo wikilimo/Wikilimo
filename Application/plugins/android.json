@@ -9,6 +9,9 @@
   "installed_plugins": {
     "cordova-plugin-whitelist": {
       "PACKAGE_NAME": "tech.roshnibiswas.wikilimo"
+    },
+    "cordova-plugin-firebase-lib": {
+      "PACKAGE_NAME": "tech.roshnibiswas.wikilimo"
     }
   },
   "dependent_plugins": {}
