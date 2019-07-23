@@ -1,5 +1,0 @@
-* Refine achievable modules
-* Define milestones & timelines
-* Run idea through judges
-* Create business plan
-* Develop UI
