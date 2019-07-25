@@ -1,7 +1,7 @@
 # Wikilimo: A ‘kilimo’ tool built by everyone
 Submission for Unite-Ideas OpenCI Platform Challenge 2019.
 
-Wikilimo is an online-offline platform to provide farmers with actionable insights (weather alerts, pest info, market rates, subsidies), P2P chat, agricultural planning from crowd-sourced & expert-backed information
+Wikilimo is an online-offline platform to provide farmers with actionable insights (weather alerts, pest info, market rates, subsidies), P2P chat, agricultural planning from crowd-sourced & expert-backed information.
 
 ## This repo hosts:
 
@@ -29,7 +29,7 @@ git clone https://github.com/lazyoracle/OpenCIPlatform.git
 ```
 
 ##### Step 2. To run the prototype application on an android device: 
-1. Go to security settings and disable Google Play Protect
+1. Go to security settings and disable Google Play Protect.
 2. Download and install the Wikilimo.apk file on the device.
 
 ##### Step 3. To delve deeper into the source code (currently still in it’s development environment), run:
@@ -45,6 +45,6 @@ cd Application
 | [Roshni Biswas](https://github.com/roshni-b)                                                | [Anurag Saha Roy](https://github.com/lazyoracle)                                              | 
 
 ## License 
-<div>Icons made by <a href="https://www.flaticon.com/authors/freepik" title="Freepik">Freepik</a> from <a href="https://www.flaticon.com/"                 title="Flaticon">www.flaticon.com</a> is licensed by <a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/3.0/"><img src="https://img.shields.io/badge/license-Creative Commons BY 3.0-blue.svg"></a>
+- <div>Icons made by <a href="https://www.flaticon.com/authors/freepik" title="Freepik">Freepik</a> from <a href="https://www.flaticon.com/"                 title="Flaticon">www.flaticon.com</a> is licensed by <a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/3.0/"><img src="https://img.shields.io/badge/license-Creative Commons BY 3.0-blue.svg"></a>
 
-Wikilimo is distibuted under <a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/4.0/"><img src="https://img.shields.io/badge/license-Creative Commons BY 4.0-blue.svg"></a>
+- Wikilimo is distibuted under <a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/4.0/"><img src="https://img.shields.io/badge/license-Creative Commons BY 4.0-blue.svg"></a>
