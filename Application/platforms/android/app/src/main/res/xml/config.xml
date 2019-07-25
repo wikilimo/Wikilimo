@@ -10,12 +10,13 @@
     </feature>
     <name>Wikilimo</name>
     <description>
-        A sample Apache Cordova application that responds to the deviceready event.
+        A 'kilimo' tool built by everyone.
     </description>
-    <author email="dev@cordova.apache.org" href="http://cordova.io">
-        Apache Cordova Team
+    <author email="wikilimo.africa@gmail.com" href="http://cordova.io">
+        Wikilimo Team: Roshni and Anurag
     </author>
     <content src="index.html" />
+    <icon src="www/img/logo.png" />
     <access origin="*" />
     <allow-intent href="http://*/*" />
     <allow-intent href="https://*/*" />

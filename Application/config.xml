@@ -4,8 +4,8 @@
     <description>
         A 'kilimo' tool built by everyone.
     </description>
-    <author email="wikilimo.africa@gmail.com" href="">
-        Wikilimo Team: Roshni and Anurag.
+    <author email="wikilimo.africa@gmail.com" href="http://wikilimo.co">
+        Wikilimo Team: Roshni Biswas and Anurag Saha Roy
     </author>
     <content src="index.html" />
     <icon src="www/img/logo.png" />
@@ -15,7 +15,7 @@
     <allow-intent href="https://*/*" />
     <allow-intent href="tel:*" />
     <allow-intent href="sms:*" />
-    <allow-intent href="mailto:*" />
+    <allow-intent href="mailto:wikilimo.africa@gmail.com" />
     <allow-intent href="geo:*" />
     <platform name="android">
         <allow-intent href="market:*" />
