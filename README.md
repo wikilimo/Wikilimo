@@ -8,7 +8,7 @@ Wikilimo is an online-offline platform to provide farmers with actionable insigh
 -   The Wikilimo platform source code
 -   Supporting submission requirements
     -   [Video Demo](https://)
-    -   [Business lan](https://)
+    -   [Business Plan](https://)
     -   [Documentation](https://github.com/lazyoracle/OpenCIPlatform/tree/master/Documentation)
 
 ## Built with:
@@ -30,14 +30,14 @@ git clone https://github.com/lazyoracle/OpenCIPlatform.git
 ```bash
 cd Wikilimo_mobileapp_sc
 ```
-###### Then, check [this](https://github.com/lazyoracle/OpenCIPlatform/blob/master/Wikilimo_mobileapp_sc/README.md) README file for further instructions.
+##### Then, check [this](https://github.com/lazyoracle/OpenCIPlatform/blob/master/Wikilimo_mobileapp_sc/README.md) README file for further instructions.
 
 
 ##### Step 4. To explore the offline functionality source code, run:
 ```bash
 cd Wikilimo_offline_sc
 ```
-###### Then, check [this](https://github.com/lazyoracle/OpenCIPlatform/blob/master/Wikilimo_offline_sc/README.md) README file for further instructions.
+##### Then, check [this](https://github.com/lazyoracle/OpenCIPlatform/blob/master/Wikilimo_offline_sc/README.md) README file for further instructions.
 
 
 ## Authors
