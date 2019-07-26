@@ -28,16 +28,16 @@ git clone https://github.com/lazyoracle/OpenCIPlatform.git
 
 ##### Step 3. To explore mobile application source code (currently still in it’s development environment), run:
 ```bash
-cd Wikilimo_mobileapp_sc
+cd Wikilimo_mobileapp
 ```
-##### Then, check [this](https://github.com/lazyoracle/OpenCIPlatform/blob/master/Wikilimo_mobileapp_sc/README.md) README file for further instructions.
+##### Then, check [this](https://github.com/lazyoracle/OpenCIPlatform/blob/master/Wikilimo_mobileapp/README.md) README file for further instructions.
 
 
 ##### Step 4. To explore the offline functionality source code, run:
 ```bash
-cd Wikilimo_offline_sc
+cd Wikilimo_offline
 ```
-##### Then, check [this](https://github.com/lazyoracle/OpenCIPlatform/blob/master/Wikilimo_offline_sc/README.md) README file for further instructions.
+##### Then, check [this](https://github.com/lazyoracle/OpenCIPlatform/blob/master/Wikilimo_offline/README.md) README file for further instructions.
 
 
 ## Authors
