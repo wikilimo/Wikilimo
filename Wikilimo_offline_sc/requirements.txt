@@ -1,0 +1,8 @@
+requests==2.18.4 
+schema==0.6.7
+chardet==3.0.2
+idna==2.5
+certifi==2017.4.17
+contextlib2==0.5.5
+argparse==1.4.0
+africastalking==1.1.6
