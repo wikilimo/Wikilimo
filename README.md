@@ -12,16 +12,7 @@ Wikilimo is an online-offline platform to provide farmers with actionable insigh
     -   [Documentation](https://github.com/lazyoracle/OpenCIPlatform/tree/master/Documentation)
 
 ## Built with:
-1. [Apache Cordova v9.0.0](https://cordova.apache.org/)
-2. <a rel="license" href="https://www.npmjs.com/package/npm/v/6.9.0"><img src="https://img.shields.io/badge/npm-v6.9.0-orange.svg"></a> <a rel="license" href="https://nodejs.org/dist/v10.16.0/docs/api/"><img src="https://img.shields.io/badge/node-v10.16.0-orange.svg"></a>
-
-3. [Android Studio emulator](https://developer.android.com/studio/run/emulator)
-4. [Firebase](https://firebase.google.com/)
-5. [Lucid chart](https://www.lucidchart.com/)
-6.  [Google Analytics](https://analytics.google.com)
-7. [Typeform](https://www.typeform.com/)
-8. <a rel="license" href="https://docs.python.org/3.7/"><img src="https://img.shields.io/badge/Python-v3.7-green.svg"></a>
-10. [Africa’s Talking API](https://africastalking.com/)
+<a rel="license" href="https://docs.python.org/3.7/"><img src="https://img.shields.io/badge/Python-v3.7-green.svg"></a>, <a rel="license" href="https://www.npmjs.com/package/npm/v/6.9.0"><img src="https://img.shields.io/badge/npm-v6.9.0-orange.svg"></a>, <a rel="license" href="https://nodejs.org/dist/v10.16.0/docs/api/"><img src="https://img.shields.io/badge/node-v10.16.0-orange.svg"></a>, [Apache Cordova v9.0.0](https://cordova.apache.org/), [Android Studio](https://developer.android.com/studio/run/emulator), [Firebase](https://firebase.google.com/), [Lucid Chart](https://www.lucidchart.com), [Typeform](https://www.typeform.com/), [Africa’s Talking](https://africastalking.com/), [Flaticons](www.flaticon.com).
 
 ## User Guide
 ##### Step 1. To clone this repository, run:
@@ -56,6 +47,4 @@ cd Wikilimo_offline_sc
 | [Roshni Biswas](https://github.com/roshni-b)                                                | [Anurag Saha Roy](https://github.com/lazyoracle)                                              | 
 
 ## Licenses 
-- <div>Icons made by <a href="https://www.flaticon.com/authors/freepik" title="Freepik">Freepik</a> from <a href="https://www.flaticon.com/"                 title="Flaticon">www.flaticon.com</a> is licensed by <a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/3.0/"><img src="https://img.shields.io/badge/license-Creative Commons BY 3.0-blue.svg"></a>.
-
-- Wikilimo is licensed by <a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/4.0/"><img src="https://img.shields.io/badge/license-Creative Commons BY 4.0-blue.svg"></a> as per Unite-Ideas OpenCI Challenge 2019 guidelines.
+Wikilimo is licensed by <a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/4.0/"><img src="https://img.shields.io/badge/license-Creative Commons BY 4.0-blue.svg"></a> as per Unite-Ideas OpenCI Challenge 2019 guidelines.
