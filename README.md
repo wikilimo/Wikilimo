@@ -28,26 +28,25 @@ Wikilimo is an online-offline platform to provide farmers with actionable insigh
 ```bash
 git clone https://github.com/lazyoracle/OpenCIPlatform.git
 ```
-<br>
+
 
 ##### Step 2. To run the prototype application on an android device: 
 1. Go to security settings and disable Google Play Protect.
 2. Download and install the Wikilimo.apk file on the device.
-<br>
+
 
 ##### Step 3. To explore mobile application source code (currently still in it’s development environment), run:
 ```bash
 cd Wikilimo_mobileapp_sc
 ```
-###### Then, check [this](https://) README file for further instructions.
-<br>
+###### Then, check [this](https://github.com/lazyoracle/OpenCIPlatform/blob/master/Wikilimo_mobileapp_sc/README.md) README file for further instructions.
+
 
 ##### Step 4. To explore the offline functionality source code, run:
 ```bash
 cd Wikilimo_offline_sc
 ```
-###### Then, check [this](https://) README file for further instructions.
-
+###### Then, check [this](https://github.com/lazyoracle/OpenCIPlatform/blob/master/Wikilimo_offline_sc/README.md) README file for further instructions.
 
 
 ## Authors
