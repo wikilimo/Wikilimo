@@ -6,4 +6,4 @@
 3. Run `cordova run android` to view the deployed app in the emulator.
 
 ### Here's a demo:
-![](www/img/mockup_demp_v.gif)
+![](/www/img/mockup_demp_v.gif)
