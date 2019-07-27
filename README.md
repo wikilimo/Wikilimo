@@ -1,4 +1,4 @@
-# Wikilimo: A ‘kilimo’ tool built by everyone
+# [Wikilimo: A ‘kilimo’ tool built by everyone] (https://ideas.unite.un.org/openciplatform/Page/ViewIdea?ideaid=1551)
 Submission for [Unite-Ideas](https://ideas.unite.un.org/main/Page/Home) OpenCI Platform Challenge, 2019.
 
 Wikilimo is an online-offline platform to provide farmers with actionable insights (weather alerts, pest information, market rates, subsidies), P2P chat and agricultural planning from crowd-sourced & expert-backed information.
@@ -30,7 +30,7 @@ git clone https://github.com/lazyoracle/OpenCIPlatform.git
 ```bash
 cd Wikilimo_mobileapp
 ```
-##### Then, check [this](https://github.com/lazyoracle/OpenCIPlatform/blob/master/Wikilimo_mobileapp/README.md) README file for further instructions.
+##### Then, check [this](https://github.com/lazyoracle/OpenCIPlatform/blob/master/Wikilimo_mobileapp/README.md) README file for further instructions and a prototype demo.
 
 
 ##### Step 4. To explore the offline functionality source code, run:
