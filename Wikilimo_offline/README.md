@@ -8,7 +8,7 @@
 `python Wikilimo_SMS.py <recipient phone numbers>`
 ###### *(Eg, python Wikilimo_SMS.py +1xxxxxxxxxx +1xxxxxxxxxx ..)*
 
-We can additionally integrate the following web APIs:
+Integration with the following web APIs is also possible:
  - **[Agro API v1.0](https://pyowm.readthedocs.io/en/latest/usage-examples-v2/agro-api-usage-examples.html)**, providing soil data and satellite imagery search and download
  - **[Air Pollution API v3.0](https://pyowm.readthedocs.io/en/latest/usage-examples-v2/air-pollution-api-usage-examples.html)**, providing data about CO, O3, NO2 and SO2
  - **[UV Index API v3.0](https://pyowm.readthedocs.io/en/latest/usage-examples-v2/uv-api-usage-examples.html)**, providing data about Ultraviolet exposition
