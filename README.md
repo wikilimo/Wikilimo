@@ -1,3 +1,4 @@
+
 # [Wikilimo: A ‘kilimo’ tool built by everyone](https://ideas.unite.un.org/openciplatform/Page/ViewIdea?ideaid=1551)
 Submission for [Unite-Ideas](https://ideas.unite.un.org/main/Page/Home) OpenCI Platform Challenge, 2019.
 
@@ -12,7 +13,7 @@ Wikilimo is an online-offline platform to provide farmers with actionable insigh
     -   [Documentation](https://github.com/lazyoracle/OpenCIPlatform/tree/master/Documentation)
 
 ## Built with:
-<a rel="license" href="https://docs.python.org/3.7/"><img src="https://img.shields.io/badge/Python-v3.7-green.svg"></a>, <a rel="license" href="https://www.npmjs.com/package/npm/v/6.9.0"><img src="https://img.shields.io/badge/npm-v6.9.0-orange.svg"></a>, <a rel="license" href="https://nodejs.org/dist/v10.16.0/docs/api/"><img src="https://img.shields.io/badge/node-v10.16.0-orange.svg"></a>, [Apache Cordova v9.0.0](https://cordova.apache.org/), [Android Studio](https://developer.android.com/studio/run/emulator), [Firebase](https://firebase.google.com/), [Lucid Chart](https://www.lucidchart.com), [Typeform](https://www.typeform.com/), [Africa’s Talking](https://africastalking.com/), [Flaticons](www.flaticon.com).
+<a rel="license" href="https://docs.python.org/3.7/"><img src="https://img.shields.io/badge/Python-v3.7-green.svg"></a>, <a rel="license" href="https://www.npmjs.com/package/npm/v/6.9.0"><img src="https://img.shields.io/badge/npm-v6.9.0-orange.svg"></a>, <a rel="license" href="https://nodejs.org/dist/v10.16.0/docs/api/"><img src="https://img.shields.io/badge/node-v10.16.0-orange.svg"></a>, <a rel="license" href="https://pypi.org/project/pyowm/2.10.0/"><img src="https://img.shields.io/badge/Piowm-v2.10.0-green.svg"></a>, <a rel="license" href="https://cordova.apache.org/"><img src="https://img.shields.io/badge/Apache Cordova-v9.0.0-blue.svg"></a>, [Android Studio](https://developer.android.com/studio/run/emulator), [Firebase](https://firebase.google.com/), [Lucid Chart](https://www.lucidchart.com), [Typeform](https://www.typeform.com/), [Africa’s Talking API](https://africastalking.com/), [Flaticons](www.flaticon.com), [Open Weather Map API](https://openweathermap.org/), :coffee: and :yellow_heart:.
 
 ## User Guide
 ##### Step 1. To clone this repository, run:
