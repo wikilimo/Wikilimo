@@ -4,6 +4,8 @@ Submission for [Unite-Ideas](https://ideas.unite.un.org/main/Page/Home) OpenCI P
 
 Wikilimo is an online-offline platform to provide farmers with actionable insights (weather alerts, pest information, market rates, subsidies), P2P chat and agricultural planning from crowd-sourced & expert-backed information.
 
+![](https://github.com/lazyoracle/OpenCIPlatform/blob/master/Wikilimo_mobileapp/www/img/app-demo-resize.gif)
+
 ## This repo hosts:
 
 -   The Wikilimo platform source code
