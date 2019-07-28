@@ -43,7 +43,7 @@ cd Wikilimo_offline
 
 ## Authors
 
-| [![Roshni Biswas](https://github.com/roshni-b.png?size=100)](https://github.com/boennemann) | [![Anurag Saha Roy](https://github.com/lazyoracle.png?size=100)](https://github.com/relekang)  |
+| [![Roshni Biswas](https://github.com/roshni-b.png?size=100)](https://github.com/roshni-b/) | [![Anurag Saha Roy](https://github.com/lazyoracle.png?size=100)](https://github.com/lazyoracle/)  |
 |---------------------------------------------------------------------------------------------------|----------------------------------------------------------------------------------------------|
 | [Roshni Biswas](https://github.com/roshni-b)                                                | [Anurag Saha Roy](https://github.com/lazyoracle)                                              | 
 
