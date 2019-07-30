@@ -1,10 +1,13 @@
 ### This directory contains the source code for the Wikilimo platform's offline functionality.
 
+### Here's a demo:
+![alt_text](offline-demo-gif.gif "offline functionality demo")
+
 ## User Guide
 
 1. All required python libraries can be installed by running `pip install -r requirements.txt`.
 
-2. Run [this](https://github.com/lazyoracle/OpenCIPlatform/blob/master/Wikilimo_offline/Wikilimo_SMS_weather_alerts.py) Python script for a demo of Wikilimo's SMS service for sending Weather Alerts:
+2. Run [this](Wikilimo_SMS_weather_alerts.py) Python script for a demo of Wikilimo's SMS service for sending Weather Alerts:
 `python Wikilimo_SMS.py <recipient phone numbers>`
 ###### *(Eg, python Wikilimo_SMS.py +1xxxxxxxxxx +1xxxxxxxxxx ..)*
 
