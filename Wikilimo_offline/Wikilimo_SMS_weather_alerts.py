@@ -87,8 +87,8 @@ def main():
     # Initializing SDKs for Africas Talking and Open Weather Map
     username = "roshnib"
 
-    api_key_at = "a8bc7ce85d25386799d345f0c82a144811f86e4d2b13dc89efc20f9f1b6454e4"
-    api_key_owm = "abb45b1f77236d6e5682f464c9bc933e"
+    api_key_at = "" #Africas Talking API Key
+    api_key_owm = "" #OWM Api Key
     africastalking.initialize(username, api_key_at)
     owm = pyowm.OWM(api_key_owm)
 
