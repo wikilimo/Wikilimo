@@ -2,6 +2,8 @@
 # [Wikilimo: A ‘kilimo’ tool built by everyone](https://ideas.unite.un.org/openciplatform/Page/ViewIdea?ideaid=1551)
 Submission for [Unite-Ideas](https://ideas.unite.un.org/main/Page/Home) OpenCI Platform Challenge, 2019.
 
+Sign up for updates and find out more details at [wikilimo.co](http://wikilimo.co)
+
 Wikilimo is an online-offline platform to provide farmers with actionable insights (weather alerts, pest information, market rates, subsidies), P2P chat and agricultural planning from crowd-sourced & expert-backed information.
 
 ![](Wikilimo_mobileapp/www/img/app-demo-resize.gif)
@@ -9,8 +11,8 @@ Wikilimo is an online-offline platform to provide farmers with actionable insigh
 ## This repo hosts:
 
 -   The Wikilimo platform source code
--   Supporting submission requirements
-    -   [Video Demo](https://)
+-   Supporting submission requirements for [Unite-Ideas OpenCI Platform Challenge](https://ideas.unite.un.org/main/Page/Home), 2019
+    -   [Video Demo](https://www.youtube.com/watch?v=cuoEjV3_wAI)
     -   [Business Plan](https://drive.google.com/open?id=1IMz9a10p0wczfOsq6qyzHCZpLgdvz31X)
     -   [Documentation](Documentation)
 
