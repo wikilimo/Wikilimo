@@ -6,4 +6,11 @@
 3. Run `cordova run android` to view the deployed app in the emulator.
 
 ### Here's a demo:
-![](https://github.com/lazyoracle/OpenCIPlatform/blob/master/Wikilimo_mobileapp/www/img/mockup_demo_v.gif)
+![](www/img/mockup_demo_v.gif)
+
+### Full support for User Analytics
+#### Active Users:
+![alt text](www/img/firebase_analytics_active_users.png "Active Users Analytics")
+<br><br>
+#### User Sessions:
+![alt text](www/img/firebase_analytics_user_session_eg.png "User Session Analytics")
