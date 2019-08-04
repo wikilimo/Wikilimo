@@ -8,4 +8,4 @@ argparse==1.4.0
 africastalking==1.1.6
 geojson==2.4.1
 pyowm==2.10.0
-flask==0.12
+flask==1.0
