@@ -17,7 +17,7 @@ Wikilimo is an online-offline platform to provide farmers with actionable insigh
     -   [Documentation](Documentation)
 
 ## Built with:
-<a rel="license" href="https://docs.python.org/3.7/"><img src="https://img.shields.io/badge/Python-v3.7-green.svg"></a>, <a rel="license" href="https://www.npmjs.com/package/npm/v/6.9.0"><img src="https://img.shields.io/badge/npm-v6.9.0-orange.svg"></a>, <a rel="license" href="https://nodejs.org/dist/v10.16.0/docs/api/"><img src="https://img.shields.io/badge/node-v10.16.0-orange.svg"></a>, <a rel="license" href="https://pypi.org/project/pyowm/2.10.0/"><img src="https://img.shields.io/badge/Pyowm-v2.10.0-green.svg"></a>, <a rel="license" href="https://cordova.apache.org/"><img src="https://img.shields.io/badge/Apache Cordova-v9.0.0-blue.svg"></a>, [Android Studio](https://developer.android.com/studio/run/emulator), [Firebase](https://firebase.google.com/), [Lucid Chart](https://www.lucidchart.com), [Typeform](https://www.typeform.com/), [Africa’s Talking API](https://africastalking.com/), [Flaticons](www.flaticon.com), [Open Weather Map API](https://openweathermap.org/), :coffee: and :yellow_heart:.
+<a rel="license" href="https://docs.python.org/3.7/"><img src="https://img.shields.io/badge/Python-v3.7-green.svg"></a>, <a rel="license" href="https://www.npmjs.com/package/npm/v/6.9.0"><img src="https://img.shields.io/badge/npm-v6.9.0-orange.svg"></a>, <a rel="license" href="https://nodejs.org/dist/v10.16.0/docs/api/"><img src="https://img.shields.io/badge/node-v10.16.0-orange.svg"></a>, <a rel="license" href="https://pypi.org/project/pyowm/2.10.0/"><img src="https://img.shields.io/badge/Pyowm-v2.10.0-green.svg"></a>, <a rel="license" href="https://cordova.apache.org/"><img src="https://img.shields.io/badge/Apache Cordova-v9.0.0-blue.svg"></a>, [Android Studio](https://developer.android.com/studio/run/emulator), [Firebase](https://firebase.google.com/), [Lucid Chart](https://www.lucidchart.com), [Typeform](https://www.typeform.com/), [Africa’s Talking API](https://africastalking.com/), [Flaticons](www.flaticon.com), [Google Cloud Platform](https://cloud.google.com/), [Open Weather Map API](https://openweathermap.org/), :coffee: and :yellow_heart:.
 
 ## User Guide
 ##### Step 1. To clone this repository, run:
@@ -35,14 +35,14 @@ git clone <this repo>
 ```bash
 cd Wikilimo_mobileapp
 ```
-##### Then, check [this](Wikilimo_mobileapp/README.md) README file for further instructions and a prototype demo.
+##### Then, check [this](Wikilimo_mobileapp/README.md) README file for further instructions and a prototype app demo.
 
 
 ##### Step 4. To explore the offline functionality source code, run:
 ```bash
 cd Wikilimo_offline
 ```
-##### Then, check [this](Wikilimo_offline/README.md) README file for further instructions.
+##### Then, check [this](Wikilimo_offline/README.md) README file for further instructions and demos of SMS/USSD services.
 
 
 ## Authors
