@@ -8,4 +8,5 @@ argparse==1.4.0
 africastalking==1.1.6
 geojson==2.4.1
 pyowm==2.10.0
-flask==1.0
+gspread==3.1.0
+oauth2client==4.1.3
