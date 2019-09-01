@@ -6,31 +6,41 @@ Send SMS with weather alerts, feature for the Wikilimo Platform
 import africastalking
 import argparse
 import pyowm
+import export_report
+import gspread
+from oauth2client.service_account import ServiceAccountCredentials
+import locations
 
 
-def get_present_weather_info(owm, latitude, longitude):
+def get_present_weather_info(owm, latitude, longitude, location):
     """
       Query for pulling present weather information using the Open Weather Map API
       Args:
         owm (str): OWM API Key
         latitude (float): location info required for API call
         longitude (float): location info required for API call
+        location (str): user input
       Returns:
         present_weather (str): Current weather conditions - temp, min temp, max temp, humidity, status
     """
     observation = owm.weather_at_coords(latitude, longitude)
     w = observation.get_weather()
-    status = w.get_status()
+    status = str(w.get_status())
     humidity = str(w.get_humidity())
     temp = str(w.get_temperature('celsius')['temp'])
     maxtemp = str(w.get_temperature('celsius')['temp_max'])
     mintemp = str(w.get_temperature('celsius')['temp_min'])
+    present_weather = "Currently the temperature in " \
+                      + location + " is: " + temp \
+                      + "C; Maximum temperature is: " + maxtemp \
+                      + "C; Minimum temperature is: " + mintemp \
+                      + "C; Humidity is: " + humidity \
+                      + "%. Overall status is: " + status+"."
 
-    present_weather = "Currently, the temperature is: " + temp +"C; Maximum temperature is: " + maxtemp + "C; Minimum temperature is: " + mintemp + "C; Humidity is: " + humidity + "%. Overall status is: "+ status + ".\n\n"
     return present_weather
 
 
-def get_forecast_weather_info(owm, latitude, longitude, date_format):
+def get_forecast_weather_info(owm, latitude, longitude, date_format, location):
     """
       Query for pulling 3 hours weather forecast for the next 5 days from the Open Weather Map API
       Args:
@@ -38,6 +48,7 @@ def get_forecast_weather_info(owm, latitude, longitude, date_format):
         latitude (float): location info required for API call
         longitude (float): location info required for API call
         date_format: ISO date-time formatting
+        location (str): user input
       Returns:
         forecast_weather (str): Forecasted weather status for 40 timestamps
     """
@@ -46,23 +57,24 @@ def get_forecast_weather_info(owm, latitude, longitude, date_format):
     forecast_weather = []
     for weather in f:
         forecast_weather += (weather.get_reference_time(date_format), weather.get_status())
-    forecast_message = "The forecast for the next 5 days is: "
+    forecast_message = "The forecast for the next 5 days in "+location+" is: "
     forecast_weather = forecast_message + str(forecast_weather)
     return forecast_weather
 
 
-def generate_sms(present_weather_info, forecast_weather_info):
+def generate_sms(present_weather_info, forecast_weather_info, location):
     """
     Creates the message body for the SMS
       Args:
         present_weather_info (str): returned by get_present_weather_info()
         forecast_weather_info (str): returned by get_forecast_weather_info()
+        location (str): user input
       Returns:
         sms_text_short (str): SMS body for a short weather update
         sms_text_long (str): SMS body for a detailed weather update with forecast info
     """
     welcome_text = "Hello from Wikilimo!\n\n"
-    weather_update_text = "Here's a weather update for Singapore:\n"
+    weather_update_text = "Here's a weather update for " + location + ":\n"
     sms_text_long = welcome_text + weather_update_text + present_weather_info + forecast_weather_info
     sms_text_short = welcome_text + weather_update_text + present_weather_info
     return sms_text_short, sms_text_long
@@ -72,7 +84,7 @@ def send_sms(text, recipients):
     """
     Sends the SMS to the recipient(s) using the Africa's Talking API
       Args:
-        text (sms): message body returned by generate_sms()
+        text (str): message body returned by generate_sms()
         recipients (str): Recipient's phone number(s) entered by user
       Returns:
         response (dict): JSON response from Africa's Talking with message delivery status code
@@ -80,7 +92,7 @@ def send_sms(text, recipients):
     # Initializing the Africa's Talking SMS service
     sms = africastalking.SMS
     response = sms.send(text, recipients)
-    return (response)
+    return response
 
 
 def main():
@@ -94,21 +106,39 @@ def main():
 
     date_format = 'iso'
 
-    # Location (Singapore)
-    latitude = 1.2932755
-    longitude = 103.7988412
-
-    # Defining arguments
+    # Defining input arguments
     parser = argparse.ArgumentParser()
+    parser.add_argument('location', help='location (city) eg. Singapore, Delhi, Kolkata')
     parser.add_argument('recipients', nargs='*', help='phone number(s) of recipient(s)')
     args = parser.parse_args()
+    location = args.location
     recipients = args.recipients
 
-    present_weather_info = get_present_weather_info(owm, latitude, longitude)
-    forecast_weather_info = get_forecast_weather_info(owm, latitude, longitude, date_format)
-    short_text, long_text = (generate_sms(present_weather_info, forecast_weather_info))
+    # Build functionality to set latest reported contact as sms recipient (currently user input)
+    # recipient = str(export_report.get_latest_contact())
 
-    print(send_sms(short_text, recipients)) #can replace with long_text for a more detailed message
+    # Using credentials to create a client to interact with the Google Sheets API
+    scope = ['https://spreadsheets.google.com/feeds',
+             'https://www.googleapis.com/auth/spreadsheets',
+             'https://www.googleapis.com/auth/drive.file',
+             'https://www.googleapis.com/auth/drive']
+    creds = ServiceAccountCredentials.from_json_keyfile_name('client_secret.json', scope)
+    client = gspread.authorize(creds)
+    sheet = client.open("Wikilimo Citizen Science Report").sheet1
+
+    latitude = locations.locations_dict.get(location)[0]
+    longitude = locations.locations_dict.get(location)[1]
+
+    present_weather_info = get_present_weather_info(owm, latitude, longitude, location)
+    forecast_weather_info = get_forecast_weather_info(owm, latitude, longitude, date_format, location)
+    short_text, long_text = (generate_sms(present_weather_info, forecast_weather_info, location))
+    pest_report = "Hello from Wikilimo! \nA pest '" + \
+                  str(export_report.get_latest_pest(sheet))+\
+                  "' has been recently reported nearby. Please take the necessary precautions."
+
+    print(send_sms(short_text, recipients))
+    #print(send_sms(long_text, recipients))
+    print(send_sms(pest_report, recipients))
 
 
 if __name__ == "__main__":
