@@ -4,9 +4,9 @@
 
 1. All required python libraries can be installed by running `pip install -r requirements.txt`.
 
-2. Run [this](Wikilimo_SMS_weather_alerts.py) Python script for a demo of Wikilimo's SMS service for sending Weather Alerts:
+2. Run [this](Wikilimo_SMS.py) Python script for a demo of Wikilimo's SMS service for sending Weather Alerts:
 `python Wikilimo_SMS.py <location> <recipient phone numbers>`
-###### *(Eg, python Wikilimo_SMS.py Delhi +1xxxxxxxxxx +1xxxxxxxxxx ..)*
+###### *(Eg: python Wikilimo_SMS.py Delhi +1xxxxxxxxxx +1xxxxxxxxxx ..)*
 
 2. [This](Wikilimo_USSD.py) is the flask app built for configuring Wikilimo's USSD service for sending Weather info, weather forecasts and pest info. Our service code is ```*384*1507#```.
 
