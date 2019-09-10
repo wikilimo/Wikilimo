@@ -6,7 +6,7 @@
 3. Run `cordova run android` to view the deployed app in the emulator.
 
 ### Here's a demo:
-![](www/img/mockup_demo_v.gif)
+![](www/img/app-demo-resize.gif)
 
 ### Full support for User Analytics
 #### Active Users:
