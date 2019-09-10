@@ -1,20 +1,19 @@
 
-# [Wikilimo: A ‘kilimo’ tool built by everyone](https://ideas.unite.un.org/openciplatform/Page/ViewIdea?ideaid=1551)
-Submission for [Unite-Ideas](https://ideas.unite.un.org/main/Page/Home) OpenCI Platform Challenge, 2019.
+# Wikilimo: A ‘kilimo’ tool built by everyone
 
-Sign up for updates and find out more details at [wikilimo.co](http://wikilimo.co)
+[Winning Submission](https://ideas.unite.un.org/openciplatform/Page/ViewIdea?ideaid=1551) for the Unite-Ideas Open Climate Informatics Challenge, 2019.
 
 Wikilimo is an online-offline platform to provide farmers with actionable insights (weather alerts, pest information, market rates, subsidies), P2P chat and agricultural planning from crowd-sourced & expert-backed information.
 
-![](Wikilimo_mobileapp/www/img/app-demo-resize.gif)
+Sign up for updates and find out more details at [http://wikilimo.co](http://wikilimo.co).
+
+![](Wikilimo_mobileapp/www/img/wikilimo_cover.png)
 
 ## This repo hosts:
 
--   The Wikilimo platform source code
--   Supporting submission requirements for [Unite-Ideas OpenCI Platform Challenge](https://ideas.unite.un.org/main/Page/Home), 2019
-    -   [Video Demo](https://www.youtube.com/watch?v=cuoEjV3_wAI)
-    -   [Business Plan](https://drive.google.com/open?id=1IMz9a10p0wczfOsq6qyzHCZpLgdvz31X)
-    -   [Documentation](Documentation)
+-  The Wikilimo platform source code
+-  [Video Demo](https://www.youtube.com/watch?v=cuoEjV3_wAI)
+-  [Documentation](Documentation)
 
 ## Built with:
 <a rel="license" href="https://docs.python.org/3.7/"><img src="https://img.shields.io/badge/Python-v3.7-green.svg"></a>, <a rel="license" href="https://www.npmjs.com/package/npm/v/6.9.0"><img src="https://img.shields.io/badge/npm-v6.9.0-orange.svg"></a>, <a rel="license" href="https://nodejs.org/dist/v10.16.0/docs/api/"><img src="https://img.shields.io/badge/node-v10.16.0-orange.svg"></a>, <a rel="license" href="https://pypi.org/project/pyowm/2.10.0/"><img src="https://img.shields.io/badge/Pyowm-v2.10.0-green.svg"></a>, <a rel="license" href="https://cordova.apache.org/"><img src="https://img.shields.io/badge/Apache Cordova-v9.0.0-blue.svg"></a>, [Android Studio](https://developer.android.com/studio/run/emulator), [Firebase](https://firebase.google.com/), [Lucid Chart](https://www.lucidchart.com), [Typeform](https://www.typeform.com/), [Africa’s Talking API](https://africastalking.com/), [Flaticons](www.flaticon.com), [Google Cloud Platform](https://cloud.google.com/), [Open Weather Map API](https://openweathermap.org/), :coffee: and :yellow_heart:.
@@ -44,6 +43,7 @@ cd Wikilimo_offline
 ```
 ##### Then, check [this](Wikilimo_offline/README.md) README file for further instructions and demos of SMS/USSD services.
 
+Read contributing guidelines [here](https://github.com/wikilimo/Wikilimo/blob/master/Contributing.md).
 
 ## Authors
 
