@@ -1,5 +1,13 @@
-locations_dict = {'Delhi': (28.7041, 77.1025),
-                  'Singapore': (1.2932755, 103.7988412),
-                  'Kolkata': (22.5626, 88.3630),
-                  'Boston': (42.361145, -71.057083),
-                  'NYC': (40.730610, -73.935242)}
+import certifi
+import ssl
+import geopy.geocoders
+from geopy.geocoders import Nominatim
+
+ctx = ssl.create_default_context(cafile=certifi.where())
+geopy.geocoders.options.default_ssl_context = ctx
+
+
+def get_coords(location):
+    geolocator = Nominatim()
+    place = geolocator.geocode(location)
+    return place.latitude, place.longitude

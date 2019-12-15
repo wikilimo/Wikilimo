@@ -7,8 +7,6 @@ import africastalking
 import argparse
 import pyowm
 import export_report
-import gspread
-from oauth2client.service_account import ServiceAccountCredentials
 import locations
 
 
@@ -97,10 +95,9 @@ def send_sms(text, recipients):
 
 def main():
     # Initializing SDKs for Africas Talking and Open Weather Map
-    username = "roshnib"
-
-    api_key_at = "" #Africas Talking API Key
-    api_key_owm = "" #OWM Api Key
+    username = ""  # Account username
+    api_key_at = ""  # Africa's Talking API Key
+    api_key_owm = ""  # OWM Api Key
     africastalking.initialize(username, api_key_at)
     owm = pyowm.OWM(api_key_owm)
 
@@ -108,7 +105,7 @@ def main():
 
     # Defining input arguments
     parser = argparse.ArgumentParser()
-    parser.add_argument('location', help='location (city) eg. Singapore, Delhi, Kolkata')
+    parser.add_argument('location', help='City/Village name or nearest landmark')
     parser.add_argument('recipients', nargs='*', help='phone number(s) of recipient(s)')
     args = parser.parse_args()
     location = args.location
@@ -117,28 +114,18 @@ def main():
     # Build functionality to set latest reported contact as sms recipient (currently user input)
     # recipient = str(export_report.get_latest_contact())
 
-    # Using credentials to create a client to interact with the Google Sheets API
-    scope = ['https://spreadsheets.google.com/feeds',
-             'https://www.googleapis.com/auth/spreadsheets',
-             'https://www.googleapis.com/auth/drive.file',
-             'https://www.googleapis.com/auth/drive']
-    creds = ServiceAccountCredentials.from_json_keyfile_name('client_secret.json', scope)
-    client = gspread.authorize(creds)
-    sheet = client.open("Wikilimo Citizen Science Report").sheet1
-
-    latitude = locations.locations_dict.get(location)[0]
-    longitude = locations.locations_dict.get(location)[1]
+    latitude, longitude = locations.get_coords(location)
 
     present_weather_info = get_present_weather_info(owm, latitude, longitude, location)
     forecast_weather_info = get_forecast_weather_info(owm, latitude, longitude, date_format, location)
     short_text, long_text = (generate_sms(present_weather_info, forecast_weather_info, location))
     pest_report = "Hello from Wikilimo! \nA pest '" + \
-                  str(export_report.get_latest_pest(sheet))+\
+                  str(export_report.get_latest_pest(export_report.sheet)) +\
                   "' has been recently reported nearby. Please take the necessary precautions."
 
-    print(send_sms(short_text, recipients))
-    #print(send_sms(long_text, recipients))
-    print(send_sms(pest_report, recipients))
+    send_sms(short_text, recipients)
+    send_sms(long_text, recipients)
+    send_sms(pest_report, recipients)
 
 
 if __name__ == "__main__":
